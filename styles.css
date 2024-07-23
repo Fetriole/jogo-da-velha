@@ -6,6 +6,7 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #f3f3f3;
+    font-family: Arial, sans-serif;
 }
 
 #game {
@@ -23,9 +24,10 @@ body {
     height: 100px;
     background-color: #fff;
     border: 2px solid #333;
-    font-size: 24px;
+    font-size: 48px;
     font-weight: bold;
     cursor: pointer;
+    color: #333;
 }
 
 #restartButton {

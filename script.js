@@ -13,6 +13,7 @@ function startGame() {
     cellElements.forEach(cell => {
         cell.classList.remove(X_CLASS);
         cell.classList.remove(O_CLASS);
+        cell.textContent = '';
         cell.removeEventListener('click', handleClick);
         cell.addEventListener('click', handleClick, { once: true });
     });
@@ -33,6 +34,7 @@ function handleClick(e) {
 
 function placeMark(cell, currentClass) {
     cell.classList.add(currentClass);
+    cell.textContent = currentClass.toUpperCase();
 }
 
 function swapTurns() {
